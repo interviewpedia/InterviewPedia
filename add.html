@@ -10,20 +10,6 @@
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<style type="text/css">
-		.brand{
-			//background: #cbb09c !important;
-		}
-		.brand-text{
-			color: #023C40 !important;
-		}
-		.user
-		{
-			width: 100px;
-			margin: 40px auto -30px;
-			display: block;
-			position: relative;
-			top:-30px;
-		}
 		.changecolor
 		{
 			//background: #ccc !important;
@@ -31,41 +17,72 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
+		.form
+		{
+			padding: 10px;
+			text-align: center;
+		}
+		.box
+		{
+			width:60%;
+			margin: auto;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			padding: 15px 15px 15px 25px;
+			background: white !important;
+		}
+		.input
+		{
+			width:100%;
+		}
 	</style>	
 </head>
 
 <body class="changecolor">
 <header style="background-color: white;">
-	<h3>InterviewPedia</h3>
+	<h4 style="margin:0; padding:20px; text-align:center;">InterviewPedia</h4>
 </header>
 
 <section class="container grey-text">
 <h4 class="center" style="color: white;">Add your experience</h4>
-<form class="white" action="#" method="POST">
+<form class="box" action="#" method="POST">
+
+	<div class="form-group">
 	<label>Your name:
 	<input type="text" name="name" value=" ">  </label>
 	<br>
-	
+	</div>
+
+	<div class="form-group">
 	<label>Your Email:
 	<input type="text" name="email" value=" "> </label>
 	<br>
-	
+	</div>
+
+	<div class="form-group">
 	<label>Company name:
 	<input type="text" name="company" value=""> </label>
 	<br>
-	
+	</div>
+
+	<div class="form-group">
 	<label>Current position: 
 	<input type="text" name="position" placeholder="Positon , Institute" value=""> </label>
 	<br>
-	
+	</div>
+
+	<div class="form-group">
 	<label>A short title to sum up your experience:
 	<input type="text" name="title" value=" "> </label>
 	<br>
-	
+	</div>
+
+	<div class="form-group">
 	<label>Your experience:
 	<input type="text" name="experience" value=" "> </label>
 	<br>
-	
+	</div>
+
 	<div class="center">
 		<input type="submit" name="submit" value="submit" class="btn brand z-depth-0" style="background:#3D5A80;">
 	</div>
